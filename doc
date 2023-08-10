@@ -1,0 +1,22 @@
+                 Github actions
+Platform to automate developer workflows 
+CI/CD is one of many workflows  
+ What is a workflow: revieew pull rqst, merge to master branch  is the bug fixed 
+CI/CD : Merged code/test/build/deployment 
+When something happens IN or TO your repo => automatic Actions are executed in response 
+A pull rqst, issue , contr joined , pr merge are called events
+1 Listen to event 
+2 Trigger 
++ same tool instead of third party
++easier to set up the pipeline
++tool for developpers 
+CI build into a docker image --> pushed into a repo
+actions are written in java script 
+name: Action Workflow
+on: [push]
+jobs:
+  run-github-actions:
+    runs-in : ubuntu-latest
+    steps:
+     - name: simple js action 
+       uses: refrences to an action
